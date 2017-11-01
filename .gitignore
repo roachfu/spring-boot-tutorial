@@ -5,3 +5,9 @@
 /spring-boot-helloworld/mvnw
 /spring-boot-helloworld/mvnw.cmd
 /spring-boot-helloworld/spring-boot-helloworld.iml
+
+/spring-boot-mybatis-annotation/target
+/spring-boot-mybatis-annotation/.mvn
+/spring-boot-mybatis-annotation/mvnw
+/spring-boot-mybatis-annotation/mvnw.cmd
+/spring-boot-mybatis-annotation/spring-boot-mybatis-annotation.iml
