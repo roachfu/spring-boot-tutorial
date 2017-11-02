@@ -10,10 +10,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 /**
- * @author fuqiang
+ * @author roach
  * @datetime 2017/11/1 15:00
  */
 
@@ -53,6 +54,7 @@ public class DemoMapperTest {
         demo.setId(1);
         demo.setDemoName("crow");
         demo.setDemoValue("乌鸦");
+        demo.setUpdateTime(new Date());
         int flag = demoMapper.update(demo);
         Assert.assertEquals(1, flag);
     }
