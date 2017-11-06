@@ -2,10 +2,12 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <settings>
+        <!--下划线风格自动转驼峰风格-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
 
     <typeAliases>
+        <!--设置别名-->
         <package name="com.roachfu.tutorial.entity"/>
     </typeAliases>
 </configuration>

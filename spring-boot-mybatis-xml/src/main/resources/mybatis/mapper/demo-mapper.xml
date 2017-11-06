@@ -2,6 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.roachfu.tutorial.mapper.DemoMapper">
     <select id="selectList" resultType="Demo">
-        select id, demo_name, demo_value from t_demo
+        select id, demo_name, demo_value, demo_status, create_time, update_time from t_demo
     </select>
+
+    <select id="selectOne" resultType="Demo">
+        select id, demo_name, demo_value, demo_status, create_time, update_time from t_demo where id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="Demo">
+        insert into t_demo(id, demo_name, demo_value) values (#{id}, #{demoName}, #{demoValue})
+    </insert>
+
+    <update id="update" parameterType="Demo">
+        update t_demo set demo_name = #{demoName}, demo_value=#{demoValue}, update_time=#{updateTime} where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        delete from t_demo where id = #{id}
+    </delete>
 </mapper>
