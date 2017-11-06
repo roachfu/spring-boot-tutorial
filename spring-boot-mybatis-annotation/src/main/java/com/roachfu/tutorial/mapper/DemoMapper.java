@@ -47,7 +47,7 @@ public interface DemoMapper {
      * @param demo 更新数据
      * @return 0|1
      */
-    @Update("update t_demo set demo_name = #{demoName}, demo_value=#{demoValue}, update_time=#{updateTime}")
+    @Update("update t_demo set demo_name = #{demoName}, demo_value=#{demoValue}, update_time=#{updateTime} where id = #{id}")
     int update(Demo demo);
     
     /**
