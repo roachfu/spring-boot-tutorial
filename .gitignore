@@ -17,3 +17,9 @@
 /spring-boot-mybatis-xml/mvnw
 /spring-boot-mybatis-xml/mvnw.cmd
 /spring-boot-mybatis-xml/spring-boot-mybatis-xml.iml
+
+/spring-boot-container/target
+/spring-boot-container/.mvn
+/spring-boot-container/mvnw
+/spring-boot-container/mvnw.cmd
+/spring-boot-container/spring-boot-container.iml
