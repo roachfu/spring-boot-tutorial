@@ -23,3 +23,9 @@
 /spring-boot-container/mvnw
 /spring-boot-container/mvnw.cmd
 /spring-boot-container/spring-boot-container.iml
+
+/spring-boot-restful/target
+/spring-boot-restful/.mvn
+/spring-boot-restful/mvnw
+/spring-boot-restful/mvnw.cmd
+/spring-boot-restful/spring-boot-restful.iml
